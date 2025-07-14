@@ -1,0 +1,19 @@
+{
+  "name": "gallery-mkiii",
+  "version": "1.0.0",
+  "description": "Oak's art gallery with WebP optimization and lazy loading",
+  "main": "index.html",
+  "scripts": {
+    "convert": "node convert-to-webp.js",
+    "build": "npm run convert && npm run cleanup",
+    "cleanup": "node -e \"const fs = require('fs'); if(fs.existsSync('All-DrawingsCompressed')) { fs.rmSync('All-DrawingsCompressed', {recursive: true, force: true}); console.log('✅ Cleaned up original PNGs after WebP conversion'); }\"",
+    "serve": "python -m http.server 8000",
+    "dev": "npm run serve"
+  },
+  "dependencies": {
+    "sharp": "^0.33.0"
+  },
+  "keywords": ["gallery", "webp", "lazy-loading", "art"],
+  "author": "Oak (Siah)",
+  "license": "MIT"
+}
