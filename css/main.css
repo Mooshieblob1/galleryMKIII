@@ -228,6 +228,12 @@ img,.mainRectangle .background {transition: opacity 0.4s ease;opacity: 1;}
   .topBar a {
     font-size: max(1.2vw, 12px);
   }
+    .mainRectangle .surtr {
+    height: 80vh;
+    width: auto;
+    object-fit: cover;
+    object-position: center;
+  }
   
   @keyframes side {
     from {
