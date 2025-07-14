@@ -7,7 +7,8 @@
     "convert": "node convert-to-webp.js",
     "build": "npm run convert && npm run cleanup",
     "cleanup": "node -e \"const fs = require('fs'); if(fs.existsSync('All-DrawingsCompressed')) { fs.rmSync('All-DrawingsCompressed', {recursive: true, force: true}); console.log('✅ Cleaned up original PNGs after WebP conversion'); }\"",
-    "serve": "python -m http.server 8000",
+    "serve": "python -m http.server 8080",
+    "serve-alt": "python -m http.server 3000",
     "dev": "npm run serve"
   },
   "dependencies": {

@@ -36,7 +36,7 @@ This will:
 ```bash
 # Start local server
 npm run serve
-# Visit: http://localhost:8000
+# Visit: http://localhost:8080
 ```
 
 ## 🎯 What Was Added
