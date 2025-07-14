@@ -43,3 +43,48 @@ body {
   transition-duration: .2s;
   transition-timing-function: ease-in-out;
 }
+
+/* Responsive Design for Drawings Gallery */
+
+/* Ultra-wide screens (21:9 and wider) */
+@media screen and (min-aspect-ratio: 21/9) {
+  .drawingContainer .box2 .dream2 {
+    width: 28vw;
+  }
+  
+  .drawingContainer .box2 .dream2 img {
+    width: 28vw;
+  }
+}
+
+/* Narrow screens (below 16:9) */
+@media screen and (max-aspect-ratio: 16/9) {
+  .drawingContainer .box2 {
+    flex-direction: column;
+    align-items: center;
+    gap: 2vh;
+  }
+  
+  .drawingContainer .box2 .dream2 {
+    width: 80vw;
+  }
+  
+  .drawingContainer .box2 .dream2 img {
+    width: 80vw;
+  }
+}
+
+/* Mobile portrait screens */
+@media screen and (max-aspect-ratio: 3/4) {
+  .drawingContainer .box2 .dream2 {
+    width: 90vw;
+  }
+  
+  .drawingContainer .box2 .dream2 img {
+    width: 90vw;
+  }
+  
+  .drawingContainer {
+    padding-top: 5vh;
+  }
+}
